@@ -1,11 +1,16 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import { Inter } from 'next/font/google'
-// import styles from '@/styles/Home.module.css'
+import { SectionTitle } from '@/components/globals/TitleH2';
 import { Heading } from '../components/Heading';
+import { Hero } from '@/components/modules/Hero';
 // const inter = Inter({ subsets: ['latin'] })
 
 const Home = () => {
-  return <Heading text='Home page' />;
+  return (
+    <>
+      <Hero />
+      {/* <Heading text='Home page' />
+      <SectionTitle>SectionTitle</SectionTitle> */}
+    </>
+  );
 };
+
 export default Home;

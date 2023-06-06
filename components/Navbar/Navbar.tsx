@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Nav, NavList, NavLink } from './Navbar.styled';
 // import { useRouter } from 'next/router';
 
 const navigation = [
@@ -12,15 +12,15 @@ export const Navbar = () => {
   //   const { pathname } = useRouter();
   //   console.log('🚀 ~ pathname:', pathname);
   return (
-    <nav>
+    <Nav>
       <div>Logo</div>
-      <div>
+      <NavList>
         {navigation.map(({ id, title, path }) => (
-          <Link key={id} href={path}>
-            {title}
-          </Link>
+          <li key={id}>
+            <NavLink href={path}>{title}</NavLink>
+          </li>
         ))}
-      </div>
-    </nav>
+      </NavList>
+    </Nav>
   );
 };

@@ -1,9 +1,9 @@
 import { Heading } from '@/components/Heading';
 
-const Posts = () => {
+const Services = () => {
   return (
     <>
-      <Heading text='Posts page' />
+      <Heading text='Services page' />
       <Heading
         tag='h2'
         text='Lorem ipsum dolor sit amet consectetur, adipisicing elit'
@@ -11,4 +11,4 @@ const Posts = () => {
     </>
   );
 };
-export default Posts;
+export default Services;
