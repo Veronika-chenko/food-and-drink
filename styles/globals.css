@@ -82,6 +82,12 @@
   --white: #ffffff;
   --footer-text-color: #e2e2e2;
   --footer-background-color: #222224;
+
+  --shadow: 0px 4px 23px rgba(19, 28, 62, 0.05);
+
+  --transition-color: color 250ms linear;
+  --transition-bg: background-color 250ms linear;
+  --transition-border-color: border-color 250ms linear;
 }
 
 * {
@@ -112,8 +118,8 @@ ul {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
 }
 
 svg {

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ContentWrap = styled.div`
-  /* padding: 46px 0 30px; */
-  padding: 0 0 30px;
+  padding: 0 0 41px;
   width: 535px;
 `;
 
@@ -26,8 +25,6 @@ export const Text = styled.p`
 
 export const HeroButtonsWrap = styled.div`
   display: flex;
-  gap: 30px;
-  margin-bottom: 42px;
+  gap: 40px;
+  margin-bottom: 48px;
 `;
-
-export const HeroButton = styled.button``;

@@ -18,7 +18,7 @@ import {
 import heroClient from '../../../../public/hero/hero-client.png';
 import courier from '../../../../public/hero/courier.png';
 import review from '../../../../public/hero/reviews.png';
-import message from '../../../../public/hero/message-author.png';
+import customer from '../../../../public/hero/customer-1.png';
 
 export const Chaos = () => {
   return (
@@ -45,7 +45,7 @@ export const Chaos = () => {
         </ReviewInfo>
       </ReviewContainer>
       <ActionMessageContainer>
-        <ActionMessagePhoto src={message} alt='message author' />
+        <ActionMessagePhoto src={customer} alt='message author' />
         <ActionMessageText>
           “When you are to lazy for cook, just click and they will come quickly”
         </ActionMessageText>

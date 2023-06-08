@@ -1,10 +1,12 @@
+import { Button } from '@/components/globals/Button';
 import {
   ContentWrap,
   Title,
   Text,
   HeroButtonsWrap,
-  HeroButton,
+  // HeroButton,
 } from './Content.styled';
+import { Customers } from './Customers';
 
 export const Content = () => {
   return (
@@ -18,10 +20,10 @@ export const Content = () => {
         easy.
       </Text>
       <HeroButtonsWrap>
-        <HeroButton>Order Now</HeroButton>
-        <HeroButton>How to order</HeroButton>
+        <Button themeColor='dark'>Order Now</Button>
+        <Button>How to order</Button>
       </HeroButtonsWrap>
-      <div>Customer Review</div>
+      <Customers />
     </ContentWrap>
   );
 };

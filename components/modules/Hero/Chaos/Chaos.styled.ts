@@ -11,7 +11,7 @@ export const Container = styled.div`
   background: url('./hero/arch.png'), url('./hero/clock.png'),
     url('./hero/truck.png');
   background-repeat: no-repeat;
-  background-position: bottom 0 right 94px, top 172px left 81px,
+  background-position: top 0 right 94px, top 172px left 81px,
     top 260px left 123px;
 
   background-size: 437px, 66px, 44px;
@@ -19,7 +19,7 @@ export const Container = styled.div`
 
 export const HeroImage = styled(Image)`
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
   right: 0;
 `;
 // -------- Courier -------------
@@ -34,7 +34,7 @@ export const CourierContainer = styled.div`
   padding: 8px 24px;
   background-color: var(--white);
   border-radius: 35px;
-  box-shadow: 0px 4px 23px rgba(19, 28, 62, 0.05);
+  box-shadow: var(--shadow);
 `;
 
 export const CourierPhoto = styled(Image)`
@@ -76,7 +76,7 @@ export const ReviewContainer = styled.div`
   padding: 12px 20px 12px 16px;
   background-color: var(--white);
   border-radius: 16px;
-  box-shadow: 0px 4px 23px rgba(19, 28, 62, 0.05);
+  box-shadow: var(--shadow);
 `;
 
 export const ReviewPhoto = styled(Image)`
@@ -110,7 +110,7 @@ export const ReviewCount = styled.p`
 // --------Action Message ----------
 export const ActionMessageContainer = styled.div`
   position: absolute;
-  bottom: -24px;
+  bottom: 0;
   right: 66px;
   display: flex;
   align-items: center;
@@ -121,13 +121,13 @@ export const ActionMessageContainer = styled.div`
   padding: 10px 20px;
   background-color: var(--white);
   border-radius: 16px;
-  box-shadow: 0px 4px 23px rgba(19, 28, 62, 0.05);
+  box-shadow: var(--shadow);
 `;
 
 export const ActionMessagePhoto = styled(Image)`
   flex-shrink: 0;
   width: 40px;
-  height: 47px;
+  height: 40px;
   border-radius: 50%;
 `;
 
