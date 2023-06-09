@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "component": "generate-react component"
+    "com": "generate-react component"
   },
   "dependencies": {
     "@types/node": "20.2.5",

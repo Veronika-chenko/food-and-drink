@@ -17,34 +17,48 @@ import customer2 from '../../../../../public/hero/customer-2.png';
 import customer3 from '../../../../../public/hero/customer-3.png';
 import star from '../../../../../public/hero/star.svg';
 
+interface ICustomer {
+  id: number;
+  title: string;
+  imageUrl: string;
+  sizes: [number, number];
+}
+
+const customers: ICustomer[] = [
+  {
+    id: 1,
+    title: 'first customer',
+    imageUrl: '/hero/customer-1.png',
+    sizes: [60, 60],
+  },
+  {
+    id: 2,
+    title: 'second customer',
+    imageUrl: '/hero/customer-2.png',
+    sizes: [60, 60],
+  },
+  {
+    id: 3,
+    title: 'third customer',
+    imageUrl: '/hero/customer-3.png',
+    sizes: [60, 60],
+  },
+];
+
 export const Customers = () => {
   return (
     <Container>
       <PhotoList>
-        <PhotoItem>
-          <CustomerImage
-            src={customer1}
-            alt='first customer'
-            width={60}
-            height={60}
-          />
-        </PhotoItem>
-        <PhotoItem>
-          <CustomerImage
-            src={customer2}
-            alt='secont customer'
-            width={60}
-            height={60}
-          />
-        </PhotoItem>
-        <PhotoItem>
-          <CustomerImage
-            src={customer3}
-            alt='third customer'
-            width={60}
-            height={60}
-          />
-        </PhotoItem>
+        {customers.map(({ id, title, imageUrl, sizes }) => (
+          <PhotoItem key={id}>
+            <CustomerImage
+              src={imageUrl}
+              alt={title}
+              width={sizes[0]}
+              height={sizes[1]}
+            />
+          </PhotoItem>
+        ))}
       </PhotoList>
       <CustomerInfo>
         <Title>Customer Review</Title>

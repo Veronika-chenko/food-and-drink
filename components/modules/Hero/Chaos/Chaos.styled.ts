@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: absolute;
-  top: 60px;
+  /* top: 60px; */
+  top: 0;
   right: -66px;
   width: 719px;
   height: 585.67px;

@@ -1,14 +1,14 @@
 import { Content } from './Content';
 import { Chaos } from './Chaos';
-import { HeroContainer } from './Hero.styled';
+import { Section, HeroContainer } from './Hero.styled';
 
 export const Hero = () => {
   return (
-    <section>
+    <Section>
       <HeroContainer>
         <Content />
         <Chaos />
       </HeroContainer>
-    </section>
+    </Section>
   );
 };

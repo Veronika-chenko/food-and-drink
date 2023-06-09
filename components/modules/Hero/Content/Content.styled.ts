@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContentWrap = styled.div`
-  padding: 0 0 41px;
+  padding: 46px 0 44px;
   width: 535px;
 `;
 
